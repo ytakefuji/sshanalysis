@@ -40,5 +40,8 @@ In Debian and Ubuntu, /var/log/auth.log is a log file of attacks.
 With /var/log/auth.log read permission, any user can analyze IPs attacking against 
 a ssh server.
 
-<img src='' width= height=>
-
+<img src='https://github.com/ytakefuji/sshanalysis/raw/main/neuro.png' width=320 height=240>
+<img src='https://github.com/ytakefuji/sshanalysis/raw/main/gpu1.png' width=320 height=240>
+<img src='https://github.com/ytakefuji/sshanalysis/raw/main/gpu2.png' width=320 height=240>
+<img src='https://github.com/ytakefuji/sshanalysis/raw/main/gpu3.png' width=320 height=240>
+<img src='https://github.com/ytakefuji/sshanalysis/raw/main/gpu4.png' width=320 height=240>
