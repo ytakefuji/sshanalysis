@@ -45,6 +45,9 @@ The larger circle, the more number of attacks.
 Although, country names were embedded on each graph.
 No one knows whether IPs are true or spoofed.
 
+sshanalysis can generate all IPs with the number of attacks.
+sshanalysis can generate top 10 IPs associated with locations (country names).
+
 <img src='https://github.com/ytakefuji/sshanalysis/raw/main/neuro.png' width=640 height=480>
 <img src='https://github.com/ytakefuji/sshanalysis/raw/main/gpu1.png' width=640 height=480>
 <img src='https://github.com/ytakefuji/sshanalysis/raw/main/gpu2.png' width=640 height=480>
