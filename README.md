@@ -25,6 +25,9 @@ Currently it is hard to distinguish true IPs and spoofed IPs.
 
 Therefore, it is hard to mitigate a DDoS attack.
 
+A botnet (short for "robot network") is a network of computers infected 
+with malware and under the control of a single attacking party.
+
 This repository introduces a visualization tool for investigating IPs 
 that are attacking a ssh server via ssh.
 
@@ -34,4 +37,8 @@ making ssh attacks against a ssh server.
 In Debian and Ubuntu, /var/log/auth.log is a log file of attacks.
 
 # auth.log analysis
+With /var/log/auth.log read permission, any user can analyze IPs attacking against 
+a ssh server.
+
+<img src='' width= height=>
 
