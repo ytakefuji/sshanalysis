@@ -56,11 +56,12 @@ sshanalysis can generate top 10 IPs associated with locations (country names).
 
 # sshanalysis.py
 sshanalysis.py consists of three modules. 
-The first module generates a csv file containing the number of attacks against the sorted IP addresses. 
-The second module is for generating the country names associated with the captured IP addresses. 
+The first module generates a csv file containing the number of recorded attacks 
+against the sorted IP addresses by using a /var/log/auth.log file. 
+The second module is for generating the country names associated with the captured IP addresses in auth.log. 
 And the last module is for drawing a graph.
 
-The graph contains top 10 IPs with country names where the radius of circles indicate the number of attacks. The larger the circle, the more attacks.
+The graph contains top 10 IPs with country names where the radius of circles indicate the number of attacks. The larger the circle, the more attacks against a ssh server.
 
-We don't know whether captured IPs are true or spoofed.
+We don't know whether captured IPs are true, spoofed, or springboarded.
 
