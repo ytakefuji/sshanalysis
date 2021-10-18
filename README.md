@@ -43,9 +43,9 @@ a ssh server.
 The following graphs show the number of attacks and top 10 IPs. 
 The larger circle, the more number of attacks.
 Although, country names were embedded on each graph.
-No one knows whether IPs are true or spoofed.
+No one knows whether IPs are true, spoofed, or springboarded.
 
-sshanalysis can generate all IPs with the number of attacks.
+sshanalysis can generate all IPs with the number of recorded attacks.
 sshanalysis can generate top 10 IPs associated with locations (country names).
 
 <img src='https://github.com/ytakefuji/sshanalysis/raw/main/neuro.png' width=640 height=480>
