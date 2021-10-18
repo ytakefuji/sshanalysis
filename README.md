@@ -5,14 +5,15 @@ $pip install -U sshanalysis
 
 # How to run sshanalysis on Linux
 <pre>
-$ sshanalysis log_file_name
+$ sshanalysis ssh_log_file
 or
 $ sshanalysis /var/log/auth.log
 or
+When you run the following command, the file /var/log/auth.log will be used automatically.
 $ sshanalysis
 </pre>
 
-# background
+# Background of sshanalysis
 In 2021, 100% of the world’s top 500 supercomputers run on Linux.
 
 96.3% of the world’s top 1 million servers run on Linux.
@@ -26,7 +27,9 @@ and LiteSpeed 5% respectively.
 
 Apache and Nginx are based on open-source software.
 
-Without Linux and open source software, the Internet would not exist.
+Without Linux and open-source software, the Internet would not exist.
+
+In other words, Linux and open source software are indispensable for the Internet.
 
 SSH is now used by almost every data center in the world and more than half of the world's Web servers are managed using SSH.
 
@@ -42,13 +45,15 @@ Therefore, it is hard to mitigate a DDoS attack.
 A botnet (short for "robot network") is a network of computers infected 
 with malware and under the control of a single attacking party.
 
+There is no open-source tool for visualizing ssh-attacks.
+
 This repository introduces a visualization tool for investigating IPs 
 that are attacking a ssh server via ssh.
 
 sshanalysis is a new tool that visualizes all the IPs and countries that are 
-making ssh attacks against a ssh server.
+making ssh attacks against a ssh server. Top 10 IPs will be displayed on a circle-graph.
 
-In Debian and Ubuntu, /var/log/auth.log is a log file of attacks.
+In Debian and Ubuntu, /var/log/auth.log is a log file of recorded attacks.
 
 # auth.log analysis
 With /var/log/auth.log "read permission", any user can analyze IPs attacking against 
