@@ -1,6 +1,7 @@
 # How to install sshanalysis on Linux
 <pre>
-sshanalysis is available in public and can be installed by pip command:
+sshanalysis is available in public and can be installed 
+by pip command:
 $pip install -U sshanalysis
 </pre>
 
