@@ -89,5 +89,9 @@ The graph contains top 10 IPs with country names where the radius of the circle
 indicates the number of attacks. 
 The larger the circle, the more attacks against the ssh server.
 
+sshanalysis.py can generate an IPs file (all attacking IPs with the number of attacks), 
+top 10 r.csv file (the number of attacks, IP address, country name), 
+and r.png (circle graph).
+
 We don't know whether captured IPs are true, spoofed, or springboarded.
 
