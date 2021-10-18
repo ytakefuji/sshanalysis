@@ -1,4 +1,18 @@
-# sshanalysis
+# How to install sshanalysis on Linux
+<pre>
+$pip install -U sshanalysis
+</pre>
+
+# How to run sshanalysis on Linux
+<pre>
+$ sshanalysis log_file_name
+or
+$ sshanalysis /var/log/auth.log
+or
+$ sshanalysis
+</pre>
+
+# background
 In 2021, 100% of the world’s top 500 supercomputers run on Linux.
 
 96.3% of the world’s top 1 million servers run on Linux.
@@ -37,16 +51,16 @@ making ssh attacks against a ssh server.
 In Debian and Ubuntu, /var/log/auth.log is a log file of attacks.
 
 # auth.log analysis
-With /var/log/auth.log read permission, any user can analyze IPs attacking against 
+With /var/log/auth.log "read permission", any user can analyze IPs attacking against 
 a ssh server.
 
-The following graphs show the number of attacks and top 10 IPs. 
-The larger circle, the more number of attacks.
-Although, country names were embedded on each graph.
-No one knows whether IPs are true, spoofed, or springboarded.
+The following graphs show the number of recorded attacks and top 10 IPs. 
+The larger circle, the more number of attacks against a ssh server.
+Although, country names were embedded on each graph,
+no one knows whether captured IPs are true, spoofed, or springboarded.
 
 sshanalysis can generate all IPs with the number of recorded attacks.
-sshanalysis can generate top 10 IPs associated with locations (country names).
+sshanalysis can generate top 10 IPs information associated with locations (country names).
 
 <img src='https://github.com/ytakefuji/sshanalysis/raw/main/neuro.png' width=640 height=480>
 <img src='https://github.com/ytakefuji/sshanalysis/raw/main/gpu1.png' width=640 height=480>
@@ -57,11 +71,13 @@ sshanalysis can generate top 10 IPs associated with locations (country names).
 # sshanalysis.py
 sshanalysis.py consists of three modules. 
 The first module generates a csv file containing the number of recorded attacks 
-against the sorted IP addresses by using a /var/log/auth.log file. 
-The second module is for generating the country names associated with the captured IP addresses in auth.log. 
-And the last module is for drawing a graph.
+against the sorted IP addresses by using a /var/log/auth.log file or the specified log_file. 
+The second module is for generating the country names associated with the captured IP addresses in the specified log_file. 
+And the last module is for drawing a circle-graph.
 
-The graph contains top 10 IPs with country names where the radius of circles indicate the number of attacks. The larger the circle, the more attacks against a ssh server.
+The graph contains top 10 IPs with country names where the radius of the circle 
+indicates the number of attacks. 
+The larger the circle, the more attacks against the ssh server.
 
 We don't know whether captured IPs are true, spoofed, or springboarded.
 
