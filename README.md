@@ -45,13 +45,18 @@ Therefore, it is hard to mitigate a DDoS attack.
 A botnet (short for "robot network") is a network of computers infected 
 with malware and under the control of a single attacking party.
 
-There is no open-source tool for visualizing ssh-attacks except "ssh-tracker" or "commons-ssh tracker".
+There are several general log analysis tools: 
+General log analysis tools: Graylog, Nagios, Elastic Stack, LOGalyze, and Fluentd.
 
-This repository introduces a visualization tool for investigating IPs 
+There is several open-source tools for analyzing ssh-attacks: 
+ "ssh-tracker" or "commons-ssh tracker".
+ 
+This repository introduces a visualization tool, sshanalysis for investigating IPs 
 that are attacking a ssh server via ssh.
 
-sshanalysis is a new tool that visualizes all the IPs and countries that are 
-making ssh attacks against a ssh server. Top 10 IPs will be displayed on a circle-graph.
+sshanalysis is a new open-source ssh-tracker tool that visualizes all the IPs 
+and country names that are making ssh attacks against a ssh server. 
+Top 10 IPs with country names will be displayed on a simplified circle-graph.
 
 In Debian and Ubuntu, /var/log/auth.log is a log file of recorded attacks.
 
