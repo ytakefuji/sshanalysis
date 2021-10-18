@@ -96,3 +96,10 @@ and r.png (circle graph).
 
 We don't know whether captured IPs are true, spoofed, or springboarded.
 
+# auth.log
+My auth.log was splited into two files: auth_logaa and auth_logab.
+
+To create the auth.log, cat auth_log* >auth.log
+
+
+
