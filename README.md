@@ -100,6 +100,12 @@ and r.png (circle graph).
 We don't know whether captured IPs are true, spoofed, or springboarded.
 
 # auth.log
+The maximum size of github file is 25M.
+
+The split command is used to split the auth.log file into multiple files of 20M in size.
+
+$ split -b 20M auth.log auth_log
+
 My auth.log was split into two files: auth_logaa and auth_logab.
 
 To create auth.log, cat auth_log* >auth.log
