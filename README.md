@@ -9,7 +9,7 @@ $pip install -U sshanalysis
 
 # How to run sshanalysis on Linux
 <pre>
-$ sshanalysis ssh_log_file
+$ sshanalysis your_ssh_log_file
 or
 $ sshanalysis /var/log/auth.log
 or
