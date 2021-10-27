@@ -1,7 +1,7 @@
 # How to install sshanalysis on Linux
 This research is under review.
 
-sshanalysis has been downloaded by 330 users worldwide.
+sshanalysis has been downloaded by 375 users worldwide.
 
 <pre>
 sshanalysis is available in public and can be installed 
